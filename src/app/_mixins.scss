@@ -1,0 +1,12 @@
+// mixins.scss
+@import 'variables';
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint '#{$breakpoint}' no definido.";
+  }
+}
