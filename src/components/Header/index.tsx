@@ -1,14 +1,20 @@
-import MainNavigation from '../MainNavigation/MainNavigation'
-import styles from './styles.module.scss'
-const Header = () => {
+// @ts-nocheck
+import React from 'react';
+import MainNavigation from '../MainNavigation';
+import styles from './styles.module.scss';
+import { HeaderProps } from '../../interfaces';
+import { SelectedProvider } from '../../context/SelectedContext';
 
-    return (
-        <header className={styles.header}>
-            <MainNavigation />
-            <div className={styles.text}>
-                Header
-            </div>
-        </header>
-    )
-}
-export default Header
+const Header: React.FC<HeaderProps> = ({ selectedItemContent }) => {
+  return (
+    <header className={styles.header}>
+      <SelectedProvider>
+        <MainNavigation />
+      </SelectedProvider>
+
+      <div>{selectedItemContent}</div>
+    </header>
+  );
+};
+
+export default Header;

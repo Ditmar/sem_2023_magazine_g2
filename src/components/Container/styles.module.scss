@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  color: black;
+  width: 100%;
+  min-height: 60vh;
+  padding: 5px 20px, 5px, 20px;
+  margin-top: 2px;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--main-background-color);
+}
