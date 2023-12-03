@@ -27,7 +27,6 @@ const Posts = async () => {
     return (
         <div className="flex min-h-screen flex-col items-center justify-between p-24">
             <h1>Post</h1>
-            
             <div className="flex flex-col">
                 {result.slice(0, 10).map((post: Post) => (
                     <div key={post.id} className="flex flex-col border-2 border-gray-300 rounded-lg p-4 m-4">
