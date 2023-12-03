@@ -1,0 +1,108 @@
+
+@import '../../app/variables';
+@import '../../app/mixins';
+
+.container {
+    
+    @include respond-to('small') {
+        width: 100% !important;
+        height: 200px;
+        background-image: url(./img/menu.png);
+        background-size: cover;
+        max-width: 100%;
+        position: fixed;
+        padding-top: 20px;
+    }
+    @include respond-to('medium') {
+        width: 100% !important;
+        height: 200px;
+        background-image: url(./img/menu.png);
+        background-size: cover;
+        max-width: 100%;
+        position: fixed;
+        padding-top: 20px;
+    }
+}
+.nav {
+  
+    
+    @include respond-to('small') {
+        width: 100%;
+        position: absolute;
+        margin: 0%;
+
+        display: flex;
+        justify-content: space-around;
+
+        
+    }
+    @include respond-to('medium') {
+        width: 100%;    
+        position: absolute;
+        margin: 0%;
+
+        display: flex;
+        justify-content: space-around; 
+
+        
+    }
+}
+
+.link {
+    
+    
+    @include respond-to('small') {
+        width: 45px;
+        height: 45px;
+        background: rgb(255, 255, 255);
+        border-radius: 50%;
+        margin: 20px;
+        padding: 10px;
+
+    }
+    @include respond-to('medium') {
+        width: 45px;
+        height: 45px;
+        background: rgb(255, 255, 255);
+        border-radius: 50%;
+
+        margin: 20px;
+        padding: 10px;
+
+        
+    }
+}
+.text {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bolder;
+    //font-family: Roboto;
+    font-size: 12px;
+    
+    @include respond-to('small') {
+        text-align: center;
+        width: 75px;
+        margin-left: -25px;
+        margin-top: 10px;
+    }
+    @include respond-to('medium') {
+        text-align: center;
+        width: 75px;
+        margin-left: -25px;
+        margin-top: 10px;   
+    }
+
+}
+.icon {
+    
+    @include respond-to('small') {
+        height: 25px;   
+    }
+    @include respond-to('medium') {
+        height: 25px;
+    }
+
+}
+
+ 
+ 

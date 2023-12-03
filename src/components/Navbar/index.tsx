@@ -1,19 +1,30 @@
-import Link from 'next/link';
-import styles from './styles.module.css';
+'use client'
+import styles from './styles.module.scss';
+import Image from 'next/image';
+
+
+import MenuIcon from '../MenuIcon/MenuHamburger'
+import MenuList from '../Menu/MenuList'
+import tupa from 'public/assets/img/icon-tupa.svg'
+import logo from 'public/assets/img/logo.png'
+
 const Navbar = () => {
     return (
-        <nav className={styles.nav}>
-        <ul>
-            <li>
-                <Link href="/">Home</Link>
-            </li>
-            <li>
-                <Link href="/post">Posts</Link>
-            </li>
-            <li>
-                <Link href="/about">About</Link>
-            </li>
-        </ul>
+        <nav >
+            <div className={styles.nav} >
+                <div className={styles.rectangle1}> 
+                    <div className={styles.rectangle2}>
+                        <Image src={logo} alt="image logo"  />
+                    </div>
+                    
+                    <MenuIcon/>
+
+                    <button className={styles.icon}>
+                        <Image  src={tupa} alt="tupa icon" />
+                    </button>  
+                </div>
+            </div>
+            
         </nav>
     );
 };
