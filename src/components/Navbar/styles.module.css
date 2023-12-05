@@ -1,5 +1,8 @@
 .nav {
-    background-color: #333;
+    display: grid;
+    grid-template-columns: calc(100% - 50px) 50px;
+    justify-content: center;
+    background-color: #33333379;
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -23,4 +26,117 @@
 
 .nav ul li a:hover {
     color: #ffcc00;
+}
+
+.nav button {
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    gap: 15px;
+}
+
+.container button {
+    padding: 10px;
+    background: white;
+    color: #01461D;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.container input {
+    width: 100%;
+    outline: none;
+    background: none;
+    border-bottom: solid 3px white;
+    font-size: 1.5em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 0;
+    max-width: 800px;
+    height: 200px;
+    background: none;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.container.expanded {
+    width: 500px;
+    height: 200px;
+}
+
+.sectionCards {
+    background-color: rgba(27, 27, 27, 0.719);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.card {
+    width: 300px;
+    max-height: 300px;
+    background: #38383886;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin: 0
+}
+
+.cardHeader {
+    width: 100%;
+    padding: 5px;
+    border-bottom: solid 2px black;
+}
+
+.cardTitle {
+    text-transform: uppercase;
+}
+
+.cardSubtitle {
+    width: 100%;
+    display: flex;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.cardContainer {
+    text-align: justify;
+    text-size-adjust: auto;
+    overflow-y: auto;
+    max-height: 150px;
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .container {
+        max-width: 80%;
+    }
 }
