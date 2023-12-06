@@ -1,38 +1,34 @@
 @import '../../app/variables';
 @import '../../app/mixins';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 
 .footer{
     background-color: white;
     background-size: cover;
-    background-position: center;
     display:inline-flex;
     justify-content:space-around;
     text-align:justify;
     width: 100%;
     height: auto;
+    font-size: 16px;
+    color: #01461D;
 
     @include respond-to('small') {    
         display: inline;
-        background-color: white;
         margin-top: auto;
         margin-bottom: auto;
     }
     @include respond-to('medium') {
-        background-color: white;
         margin-top: auto;
         margin-bottom: auto;
     }
     
 }
 .imagenFooter{
-   // height: auto;
     width: 250px;
     padding-top: 1rem;
     
     @include respond-to('small') {
         margin: auto;
-        background-color: white;
     }
     @include respond-to('medium') {
         margin-right: 10px;
@@ -44,7 +40,6 @@
 }
 .line{
     background-color: #01461D;
-    color: #01461D;;
     width: 4px;
     height: 90px;
     margin-top: -4px;
@@ -62,7 +57,6 @@
 }
 .line2{
     background-color: #01461D;
-    color: #01461D;
     font-size: 10px;
     width: 4px;
     height: 90px;
@@ -77,16 +71,14 @@
     }
 }
 .footertext{
-    color: #01461D;
     display: flex;
-    font-family: Montserrat;
-    font-size: 16px;
     text-align:left;
     margin-top: 25px;
 
     @include respond-to('small') {
         margin-bottom: 10px;
         background-color: white;
+        font-weight: 800;
     }
 }
 .textR{
@@ -103,31 +95,27 @@
     }
 }
 .text{
+    font-weight: 800;
     @include respond-to('small') {
         text-align: center;
-        font-family: Montserrat;
         font-size: 15px;
     }
 }
 .list{
-    color: #01461D;
     display:flex;
     text-align:left;
     margin-top: 12px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
     line-height: 30px;
     list-style-type:disc;
+    width: 270px;
     
     @include respond-to('small') {
         text-align:left;
         display: inline;
-        font-family: Montserrat;
         font-size: 15px;
     }
     @include respond-to('medium') {
         display: inline;
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 16px;
     }
 }
@@ -142,19 +130,14 @@
     }
 }
 .text2{
-    color: #01461D;
     margin-top: 12px;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: left;    
-    font-size: 16px;
 
     @include respond-to('small') {
-        font-family: Montserrat;
         font-size: 15px;
         margin-top: auto;
     }
     @include respond-to('medium') {
-        font-family: Arial, Helvetica, sans-serif;
         font-size: 16px;
     }
 }
@@ -165,14 +148,12 @@
     margin-left: 40px;
     margin-right: 20px;
     margin-top: 90px;
-    color:  #01461D;
-    font-size: 16px;
-    font-family:Arial, Helvetica, sans-serif;
 
     @include respond-to('small') {
         float:right; clear: both;
         margin-top: 30px;
         background-color: white;
+        font-weight: 800;
      }
      @include respond-to('medium') {
         display: inline;
@@ -186,12 +167,10 @@
 } 
 .text4{
     display: flex;
-    font-size: 16px;
     height: auto;
     width: 170px;
 
     @include respond-to('small') {
-        font-family: Montserrat;
         font-size: 15px;
     }
     @include respond-to('medium') {
@@ -207,7 +186,6 @@
         height: 20%;
     }
 }
-
 .line3{
     background-color: #01461D;
     width: 3.5px;
@@ -222,7 +200,7 @@
         -webkit-transform: rotate(-90deg);
         -moz-transform: rotate(-90deg);
         -o-transform: rotate(-90deg);
-        margin-left: 95px;
+        margin-left: 70px;
         height: 170px;
         margin-top: -80px;
         margin-bottom: -80px;

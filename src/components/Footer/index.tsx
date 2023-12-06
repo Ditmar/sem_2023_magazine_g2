@@ -40,7 +40,6 @@ const Footer = () => {
         <section className={styles.text4}>
           <p className={styles.text5}>SÍGUENOS EN</p>
           <img src="imagenes/Vector.jpg" className={styles.imagenFooter2}  alt="imagenFooter2"></img>
-          
         </section>
       </div>
     </footer>
