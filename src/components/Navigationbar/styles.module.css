@@ -1,0 +1,76 @@
+.container {
+    background-image: url('./img/Rectangle\ 49.png');
+    color: white;
+    padding: 0;
+    text-align: center;
+    width: 1520px;
+    height: 294px;
+    flex-shrink: 0;
+}
+.image{
+    margin-left: 16px;
+    margin-top: 2px;
+    border-radius: 0px 0px 20px 0px;
+    background: white;
+}
+.nav{
+    display: flex;
+}
+.nave{
+    display: flex;
+}
+.nuevo{
+    background: var(--1, #01461D);
+    height: 34px;
+    width: 100%;
+    margin-top: 206px;
+}
+.naves{
+    display: flex;
+    margin-left: 50px;
+    margin-top: 23px;
+}
+.navesLetras{
+    display: flex;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.botonIniciar{
+    display: flex;
+    margin-left: 50px;
+    border: 1px solid #FFF;
+    color: #FFF;
+    margin-top: 18px;
+
+text-align: center;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+text-transform: uppercase;
+}
+.botonRegistrar{
+    display: flex;
+    margin-left: 20px;
+    background: var(--1, #01461D);
+    /* width: 165px; */
+    /* height: 44px; */
+    flex-shrink: 0;
+    color: #FFF;
+    margin-top: 18px;
+text-align: center;
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+text-transform: uppercase;
+}
+.botonIniciarLetras{
+    margin-top: 8px;
+}
+.botonRegistrarLetras{
+    margin-top: 8px;
+}
