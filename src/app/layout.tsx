@@ -1,12 +1,14 @@
 import Header from '@/components/Header'
 import './globals.css'
 import type { Metadata } from 'next'
-import { Roboto, Montserrat } from 'next/font/google'
+import { Montserrat, Roboto, Lato, Inter} from 'next/font/google';
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 const roboto = Roboto ({ weight: '400',subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], display: 'swap'});
+const lato = Lato({ weight: '100', subsets: ['latin'], display: 'swap'});
 
 export const metadata: Metadata = {
   title: 'Create Next App',
