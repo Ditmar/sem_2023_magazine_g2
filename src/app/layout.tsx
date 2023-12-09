@@ -4,6 +4,8 @@ import type { Metadata } from 'next'
 import { Montserrat, Roboto, Lato, Inter} from 'next/font/google';
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import SessionAuthProvider from './session/SessionAuthProvider'
+import { SessionProvider } from 'next-auth/react'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 const roboto = Roboto ({ weight: '400',subsets: ['latin'] })
@@ -23,7 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={montserrat.className}>
         <Header/>
-        {children}
+          {children}
         <Footer/>
       </body>
       </html>

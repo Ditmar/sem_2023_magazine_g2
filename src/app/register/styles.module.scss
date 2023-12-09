@@ -1,0 +1,113 @@
+.register {
+    min-height: 100vh;
+    background-color: #ffffff;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.imagen{
+    width: 832px;
+    height: 290px;
+    flex-shrink: 0;
+    background: url(../assets/img/logo.png),#ffffff 50% / cover no-repeat;
+    flex-shrink: 0;       
+}
+
+.ButtonIniciar {
+    background-color: #178435; 
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 362px;
+    height: 49;
+    border-radius: 35px;
+    font-size: 40px;
+    font: Monserrat;
+}
+
+.button{
+    width: 251px;
+    height: 69px;
+    flex-shrink: 0;
+    border-radius: 28px;
+    background: var(--2, #178435);
+    color: #FFF;
+    text-align: center;
+    font-family: Montserra;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 20px;
+    
+}
+.body_button{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+.ButtonFacebook,
+.ButtonGoogle{
+    background-color: #178435; 
+    display:flex;
+    justify-content:center;
+    width: 615px;
+    height: 60px;
+    top: 364px;
+    left: 569px;
+    border-radius: 28px;
+    font-size: 40px;
+    margin: 20px;
+}
+.group label .icon {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    position: relative;
+    display: inline-block;
+    background: rgba(255, 255, 255, .1);
+}
+.group .label {
+    color: #aaa;
+    font-size: 12px;
+}
+.group .label,
+.group .input {
+    
+    width: 40%;
+    color: #050505;
+    display:flex;
+    
+}
+ .group .label {
+    text-transform: uppercase;
+}
+.group label .icon:before,
+.group label .icon:after {
+   content: '';
+   width: 10px;
+   height: 2px;
+   background: #fff;
+   position: absolute;
+   transition: all .2s ease-in-out 0s;
+}
+.group label .icon:after {
+   top: 6px;
+   right: 0;
+   transform: scale(0) rotate(0);
+}
+.input_field{
+   justify-content: center;
+   width: 604px;
+   margin: 9px;
+   outline: none;
+   border: none;
+   height: 2rem;
+   background: transparent;
+   padding: 1px 2px;
+   border-bottom: 2px solid rgb(10, 10, 10);
+}
