@@ -1,81 +1,81 @@
 
 .container{
-  width: 1349px;
-  height: 100%;
+  width: 90rem;
+  height: 64rem;
 }
 .formu{
 	width:auto;
-	padding:16px;
-	border-radius:10px;
+	padding:1;
+	border-radius:0.625rem;
 	//  
 	background-color:#FFF;
 }
 
 .labels{
-	width:80px;
+	width:9.313rem;
   color: #000;
-  margin-left: 133px;
+  margin-left: 8.313rem;
 	font-weight:bold;
 	display:inline-block;
 }
 .labels1{
-	width:100px;
+	width:6.25rem;
   color: #000;
-  margin-left: 133px;
+  margin-left: 8.313rem;
 	font-weight:bold;
 	display:inline-block;
 }
 
 .formu .inputs2{
-	width:352px;
-	padding:3px 10px;
-	border:1px solid #f6f6f6;
-	border-radius:3px;
+	width:22rem;
+	padding:0.188rem 0.625rem;
+	border:0.063 solid #f6f6f6;
+	border-radius:0.188rem;
 	background-color:#D9D9D9;
-	margin:8px 0;
+	margin:0.5rem 0;
 	display:inline-block;
 }
 
-.formu .inputs[type="text"],
-.formu .inputs[type="email"]{
-	width:938px;
-	padding:3px 10px;
-	border:1px solid #D9D9D9;
-	border-radius:3px;
+.formu .inputs[type="text"]{
+	width: 58.625rem;
+	margin-top: 11.063rem;
+	padding:0.188rem 0.625rem;
+	border:0.063rem solid #D9D9D9;
+	border-radius:0.188rem;
 	background-color:#D9D9D9;
-	margin:8px 0;
+	margin:0.5rem 0;
 	display:inline-block;
 }
 
 .formu input[type="submit"]{
-	width:467px;
-	padding:8px 16px;
-	margin-top:32px;
-	border:1px solid #000;
-	border-radius:25px;
+	width:29.188rem;
+	padding:0.5rem 1rem;
+	margin-top:2rem;
+	border:0.063rem solid #000;
+	border-radius:1.563rem;
 	display:block;
 	color:#fff;
 	background: var(--2, #493c92);
 } 
 .formu .inputs3[type="submit"]{
-	width:329px;
-	padding:8px 16px;
-	margin-top:32px;
-	border:1px solid #000;
-	border-radius:25px;
+	width:20.563rem;
+	padding:0.5rem 1rem;
+	margin-top:2rem;
+	border:0.063rem solid #000;
+	border-radius:1.563rem;
 	display:block;
 	color:#fff;
 	background: var(--2, #4A8345);
 }
 .formu .inputs1[type="submit"]{
-	width:467px;
-	padding:8px 16px;
-	margin-top:32px;
-  margin-left: 400px;
+	width:29.188rem;
+	padding:0.5rem 1rem;
+	margin-top:2rem;
+  margin-left: 25rem;
 	border:1px solid #000;
 	display:block;
 	color:#fff;
-	border-radius: 25px;  
+	border-radius: 1.563rem;  
 background: var(--2, #4A8345);;
 }
 
@@ -86,18 +86,24 @@ background: var(--2, #4A8345);;
   display: flex;
 }
 .sepas{
-  margin-left: 230px;
+  margin-left: 14.375rem;
 }
 .sepaIcon{
-  margin-left: 150px;
+	width: 5.813rem;
+    height: 5.5rem;
+  margin-left: 9.375rem;
 }
 .title{
   color: #01461D;
-  margin-left: 390px;
+  margin-left: 24.375rem;
   font-family: Montserrat;
-  font-size: 50px;
+  font-size: 3.125rem;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
   text-transform: uppercase;
+}
+.text{
+	color: #000;
+	width: 313px;
 }

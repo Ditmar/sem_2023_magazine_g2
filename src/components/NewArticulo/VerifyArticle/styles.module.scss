@@ -1,0 +1,61 @@
+.container{
+    width: 1440px;
+    height: 1920px;
+    background: white;
+}
+.styles.container_two{
+    width: 1099px;
+    height: 139px;
+    flex-shrink: 0;
+}
+.letraOne{
+    margin-left: 137px;
+    color: #000;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 139.687%; /* 44.7px */
+    text-transform: uppercase;
+}
+.title{
+    margin-left: 137px;
+    color: #01461D;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase
+}
+.data{
+    color: #000;
+    margin-left: 137px;
+font-family: Lato;
+font-size: 16px;
+font-style: normal;
+font-weight: 275;
+line-height: 136%; /* 21.76px */    
+}
+.linear{
+    width: 1088px;
+height: 4px;
+flex-shrink: 0;
+margin-left: 137px;
+margin-top: 23px;
+background: var(--1, #01461D);
+}
+.container_four{
+    width: 1099px;
+height: 845px;
+flex-shrink: 0;
+}
+.letraTwo{
+    color: #000;
+    margin-left: 137px;
+font-family: Lato;
+font-size: 24px;
+font-style: normal;
+font-weight: 300;
+line-height: 144%; /* 34.56px */
+}
