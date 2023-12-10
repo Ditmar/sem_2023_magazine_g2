@@ -1,9 +1,12 @@
 import styles from './styles.module.css';
+
+import Navbar from '../Navbar';
+
 const MainNavigation = () => {
 
     return (
         <nav className={styles.nav}>
-            Menu here
+            <Navbar/>
         </nav>
     )
 }
