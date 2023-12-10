@@ -1,12 +1,7 @@
-import React, { ReactNode } from 'react';
 import styles from './styles.module.scss';
 import Navbar from '../Navbar';
 
-type Props = {
-  children?: ReactNode;
-};
-
-const Layout = ({ children }: Props) => (
+const MainNavigation = () => (
   <div className={styles.mainNavigation}>
     <div className={styles.navHeader}>
       <Navbar />
@@ -14,4 +9,4 @@ const Layout = ({ children }: Props) => (
   </div>
 );
 
-export default Layout;
+export default MainNavigation;

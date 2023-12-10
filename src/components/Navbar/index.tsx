@@ -1,7 +1,7 @@
 // @ts-nocheck
 'use client';
 import { useState } from 'react';
-import styles from './navbar.module.scss';
+import styles from './styles.module.scss';
 import Link from 'next/link';
 import Years from '../../app/years/page';
 
@@ -11,7 +11,6 @@ const Navbar: React.FC = () => {
 
   const handleItemClick = (itemName: string) => {
     if (itemName === 'volumenes') {
-      // setSelectedItem('Años');
       setShowYears(true);
     } else {
       setSelectedItem(null);
@@ -57,16 +56,13 @@ const Navbar: React.FC = () => {
         </ul>{' '}
         {showYears && (
           <button
-            variant='extended'
             className={styles.fab}
             onClick={() => handleItemClick('Años')}
           >
             AÑOS
           </button>
         )}
-        {selectedItem && (
-          <Years selectedItemContent={<div>Contenido de {selectedItem}</div>} />
-        )}
+        {selectedItem && <Years />}
       </div>
     </>
   );

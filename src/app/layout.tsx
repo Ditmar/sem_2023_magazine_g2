@@ -1,10 +1,8 @@
-// pages/_app.tsx
 import { AppProps } from 'next/app';
-
 import './globals.css';
-import Layout from '../components/MainNavigation';
 import Footer from '../components/Footer';
 import Container from '../components/Container';
+import Header from '@/components/Header';
 
 function MyApp({ children }: AppProps & { children: React.ReactNode }) {
   return (
@@ -15,7 +13,7 @@ function MyApp({ children }: AppProps & { children: React.ReactNode }) {
       />
       <body>
         {' '}
-        <Layout />
+        <Header />
         <Container>{children}</Container>
         <Footer />
       </body>{' '}

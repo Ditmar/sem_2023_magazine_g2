@@ -1,6 +1,4 @@
-// src/app/users/page.tsx
 import Link from 'next/link';
-// import Layout from '../../app/layout';
 import List from '../../components/Year/List';
 import { yearData } from '../../utils/mocking/yearData';
 

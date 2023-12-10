@@ -1,8 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-
 import ListDetailVolume from '@/components/Volume/ListDetailVolume';
-
 import { Volume } from '../../../interfaces';
 import { volumeData } from '@/utils/mocking/volumeData';
 

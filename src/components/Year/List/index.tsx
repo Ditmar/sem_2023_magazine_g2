@@ -1,3 +1,4 @@
+'use client';
 import React, { useRef, useState } from 'react';
 import ListItem from '../ListItem';
 import { Year } from '../../../interfaces';

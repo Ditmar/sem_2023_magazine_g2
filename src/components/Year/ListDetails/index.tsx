@@ -85,9 +85,13 @@ const ListDetail = ({ item: year }: ListDetailProps) => {
                     </div>
 
                     <div className={styles.publicationInfo}>
-                      {volume.publicationDate}, {year.name}
+                      <div className={styles.titles}>
+                        {' '}
+                        {volume.publicationDate} | {year.name}
+                      </div>
+
+                      <div className={styles.tomo}>{volume.tomo}</div>
                     </div>
-                    <div className={styles.tomo}>{volume.tomo}</div>
                   </div>
                 </div>
               </li>

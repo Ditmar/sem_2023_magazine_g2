@@ -18,7 +18,3 @@ export interface Year {
   description: string;
   volumes: Volume[];
 }
-
-export interface HeaderProps {
-  selectedItemContent: React.ReactNode | null;
-}

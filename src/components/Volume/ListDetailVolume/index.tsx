@@ -1,4 +1,3 @@
-// src/components/ListDetail.tsx
 import React from 'react';
 import { Volume } from '../../../interfaces';
 

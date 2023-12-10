@@ -11,14 +11,14 @@
   .subtitle {
     display: flex;
 
-    font-size: 2rem;
+    font-size: 48px;
     margin-bottom: 10px;
     font-weight: bold;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: darkgreen;
+    color: #01461d;
     width: 100%;
     transition: color 0.5s ease;
   }
@@ -43,8 +43,8 @@
       }
 
       .volumeImage {
-        width: 300px;
-        height: 500px;
+        width: 410px;
+        height: 617px;
         margin: 10px;
       }
 
@@ -62,21 +62,37 @@
 
       .publicationInfo {
         display: flex;
-        flex-direction: row;
+        width: 100%;
+        color: rgba(0, 0, 0, 0.6);
+
+        height: 100px;
+
         justify-content: center;
+        flex-direction: column;
         align-items: center;
+
+        .titles {
+          width: 238px;
+          justify-content: center;
+          align-items: center;
+          font-size: 36px;
+          height: 42px;
+          font-weight: 200;
+          margin-bottom: 10px;
+        }
       }
 
       .tomo {
         display: flex;
-        flex-direction: column;
+
         align-items: center;
         justify-content: center;
-        font-size: 30px;
-        font-weight: 600;
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 56.25px;
         text-transform: none;
         letter-spacing: 1px;
-        color: darkgreen;
+        color: #01461d;
         width: 100%;
         transition: color 0.5s ease;
       }
