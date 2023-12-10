@@ -1,5 +1,6 @@
 // @ts-nocheck
 'use client';
+import { useState } from 'react';
 import styles from './styles.module.scss';
 import Link from 'next/link';
 import Years from '../../app/years/page';
@@ -8,11 +9,14 @@ import Card from './card';
 import SearchIcon from '../../assetss/searchIcon.svg'
 import useForm from './useForm';
 import dataJson from '../Mocks/data.json'
+
+
 const endpoint = "https://fakestoreapi.com/products"
 
 const Navbar: React.FC = () => {
   const [selectedItem, setSelectedItem] = useState(null);
   const [showYears, setShowYears] = useState(false);
+
   const [toogle, setToogle] = useState(false)
   const initialFormState = { search: '' };
   const [form, handlerChangeForm, handlerResetForm] = useForm(initialFormState);
@@ -41,45 +45,46 @@ const Navbar: React.FC = () => {
         );
       }
   };
-  // Busqueda por titulo
-  const handleSearch = (event: FormEvent) => {
-    event.preventDefault()
-    const filter = data.filter((item) => item.title.toLowerCase().includes(form.search.toLowerCase()))
-    setResult(filter)
-    handlerResetForm()
-  }
-  const fetchData = async (endpoint: any) => {
 
-    try {
-      const response = await fetch(endpoint, {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-      });
-
-      if (!response.ok) {
-        throw new Error(`Error: ${response.status} - ${response.statusText}`);
-      }
-
-      return await response.json();
-    } catch (error) {
-      console.error('Error in fetchData:', error);
-      throw error;
+    // Busqueda por titulo
+    const handleSearch = (event: FormEvent) => {
+      event.preventDefault()
+      const filter = data.filter((item) => item.title.toLowerCase().includes(form.search.toLowerCase()))
+      setResult(filter)
+      handlerResetForm()
     }
-  }
-
-  //Comentar este useEffect para usar mock dataJson
-  // useEffect(() => {
-  //     const getData = async () => {
-  //         const res = await fetchData(endpoint)
-  //         setData(res)
-  //         setResult(res)
-  //     }
-
-  //     getData()
-
-  // }, [])
+    const fetchData = async (endpoint: any) => {
+  
+      try {
+        const response = await fetch(endpoint, {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+        });
+  
+        if (!response.ok) {
+          throw new Error(`Error: ${response.status} - ${response.statusText}`);
+        }
+  
+        return await response.json();
+      } catch (error) {
+        console.error('Error in fetchData:', error);
+        throw error;
+      }
+    }
+  
+    //Comentar este useEffect para usar mock dataJson
+    // useEffect(() => {
+    //     const getData = async () => {
+    //         const res = await fetchData(endpoint)
+    //         setData(res)
+    //         setResult(res)
+    //     }
+  
+    //     getData()
+  
+    // }, [])
 
   return (
     <>
@@ -110,7 +115,7 @@ const Navbar: React.FC = () => {
               VOLÚMENES
             </Link>
           </li>
-        </ul>
+        </ul>{' '}
         <button className={styles.btnSearch} onClick={handleClick}>
           <img src={SearchIcon.src} alt="searchIcon" />
         </button>
@@ -147,5 +152,4 @@ const Navbar: React.FC = () => {
     </>
   );
 };
-
 export default Navbar;
