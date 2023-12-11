@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 .nav {
-    background-color: #333;
+    display: grid;
+    grid-template-columns: calc(100% - 50px) 50px;
+    justify-content: center;
+    background-color: #33333379;
     color: white;
     padding: 10px 0;
     text-align: center;
@@ -23,4 +28,216 @@
 
 .nav ul li a:hover {
     color: #ffcc00;
+}
+
+.nav button {
+    padding: 0;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.container button {
+    padding: 10px;
+    background: white;
+    color: #01461D;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.container input {
+    width: 100%;
+    outline: none;
+    background: none;
+    border-bottom: solid 3px white;
+    font-size: 1.5em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 0;
+    max-width: 800px;
+    height: 200px;
+    background: none;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.container.expanded {
+    width: 500px;
+    height: 200px;
+}
+
+.sectionCards {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 253px;
+    padding-right: 253px;
+    margin: 0;
+    gap: 10px;
+}
+
+.sectionTitle {
+    width: 100%;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 78.02px;
+    color: #01461D;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.card {
+    width: 100%;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    border-bottom: solid 4px #01461D;
+}
+
+.cardHeader {
+    width: 100%;
+    padding: 5px;
+}
+
+.cardTitle {
+    width: 100%;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: left;
+    line-height: 55.87px;
+    word-wrap: break-word;
+}
+
+.cardSubTitle {
+    width: 100%;
+    display: flex;
+    text-transform: capitalize;
+    text-align: left;
+    color: #aaaaaa;
+    font-size: 27px;
+    line-height: 32.64px;
+    font-weight: 275;
+}
+
+.cardContainer {
+    text-align: justify;
+    text-size-adjust: auto;
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    word-wrap: break-word;
+}
+
+.cardAutor {
+    text-transform: capitalize;
+    text-align: left;
+    color: #aaaaaa;
+    font-size: 24px;
+    line-height: 32.64px;
+    font-weight: 275;
+}
+
+.cardActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.cardActionsBtn {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.cardActionsBtn:hover {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+
+.cardIcon {
+    width: 28px !important;
+    height: 30px !important;
+    margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .container {
+        max-width: 80%
+    }
+
+    .sectionCards {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .sectionTitle {
+        font-size: 30px;
+        line-height: 36.57px;
+    }
+
+    .cardTitle {
+        font-size: 14px;
+        line-height: 19.56px;
+    }
+
+    .cardSubTitle {
+        font-size: 12px;
+        line-height: 16.32px;
+    }
+
+    .cardContainer {
+        font-size: 12px;
+        line-height: 16.32px;
+    }
+
+    .cardAutor {
+        font-size: 10px;
+        line-height: 13.6px;
+    }
+
+    .cardIcon {
+        width: 15px !important;
+        height: 16px !important;
+    }
+
+    .card {
+        border-bottom: solid 1px #01461D;
+    }
+
 }
