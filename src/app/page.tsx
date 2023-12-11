@@ -1,8 +1,8 @@
-import ArticulosCietificos from "@/components/ArticulosCientificos";
+import ScientificArticles from "@/components/ScientificArticles";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <ArticulosCietificos/>
+    <main className="flex min-h-screen flex-col items-center justify-between">
+      <ScientificArticles/>
     </main>
   )
 }
