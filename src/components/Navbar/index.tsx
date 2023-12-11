@@ -17,6 +17,7 @@ const Navbar = () => {
     const [data, setData] = useState(dataJson)
     const [result, setResult] = useState([])
     // Descomentar para usar la api
+
     // const [data, setData] = useState([])
     // const [result, setResult] = useState([])
 
@@ -31,7 +32,6 @@ const Navbar = () => {
         setResult(filter)
         handlerResetForm()
     }
-
     const fetchData = async (endpoint: any) => {
 
         try {

@@ -84,6 +84,7 @@
 }
 
 .sectionCards {
+
     width: 100%;
     background-color: #fff;
     display: flex;
@@ -134,6 +135,7 @@
 }
 
 .cardSubTitle {
+
     width: 100%;
     display: flex;
     text-transform: capitalize;
@@ -142,6 +144,7 @@
     font-size: 27px;
     line-height: 32.64px;
     font-weight: 275;
+
 }
 
 .cardContainer {
