@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { Roboto, Montserrat } from 'next/font/google'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import Article from "../components/PublicationArticles/page"
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 const roboto = Roboto ({ weight: '400',subsets: ['latin'] })
