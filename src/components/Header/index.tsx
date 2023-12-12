@@ -1,14 +1,12 @@
-import MainNavigation from '../MainNavigation/MainNavigation'
-import styles from './styles.module.scss'
-const Header = () => {
+import MainNavigation from '../MainNavigation';
+import styles from './styles.module.scss';
 
-    return (
-        <header className={styles.header}>
-            <MainNavigation />
-            <div className={styles.text}>
-                Header
-            </div>
-        </header>
-    )
-}
-export default Header
+const Header = () => {
+  return (
+    <header className={styles.header}>
+      <MainNavigation />
+    </header>
+  );
+};
+
+export default Header;

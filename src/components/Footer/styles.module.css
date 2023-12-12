@@ -1,49 +1,48 @@
 /* Estilos para el footer */
 .footer {
-    background-color: #c3c3c3;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    width: 100%;
-  }
-  
-  /* Estilos para las secciones de texto */
-  .footerSection {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-    width: 80%; 
-  }
-  
-  .footerText {
-    flex: 1; 
-  }
-  
-  .footerText p {
-    font-size: 16px;
-    color: black;
-  }
-  .footerText2 {
-    flex: 1; 
-    text-align: center;
-  }
-  
-  .footerText2 p {
-    font-size: 30px;
-    color: black;
-  }
-  .footerText2 span {
-    font-size: 16px;
-    color: black;
-  }
-  
-  /* Estilos para la imagen */
-  .footerImage {
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    margin-bottom: 20px;
-    width: 20%; 
-  }
-  
+  background-color: #c3c3c3;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Estilos para las secciones de texto */
+.footerSection {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  width: 80%;
+}
+
+.footerText {
+  flex: 1;
+}
+
+.footerText p {
+  font-size: 16px;
+  color: black;
+}
+.footerText2 {
+  flex: 1;
+  text-align: center;
+}
+
+.footerText2 p {
+  font-size: 30px;
+  color: black;
+}
+.footerText2 span {
+  font-size: 16px;
+  color: black;
+}
+
+/* Estilos para la imagen */
+.footerImage {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 20%;
+}

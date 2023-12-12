@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './styles.module.css'
+import styles from './styles.module.scss'
 import Pdficon from '../../assetss/PDF 3.svg'
 import LinkIcon from '../../assetss/LINK 3.svg'
 
