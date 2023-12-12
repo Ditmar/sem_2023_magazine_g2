@@ -1,0 +1,62 @@
+@import '../../app/variables';
+@import '../../app/mixins';
+
+.container {
+    
+    @include respond-to('small') {
+        width: 100%;
+        height: 12.5rem;
+        background-image: url(/assets/img/menu.png);
+        background-size: cover;
+        max-width: 100%;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.6); 
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8); 
+            z-index: -1; 
+          }
+    }
+    @include respond-to('medium') {
+        width: 100% !important;
+        height: 12.5rem;
+        background-image: url(/assets/img/menu.png);
+        background-size: cover;
+        max-width: 100%;
+        position: fixed;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.8); 
+            z-index: -1; 
+          }
+    }
+}
+.nav {
+
+    padding: 0rem;
+
+    @include respond-to('small') {
+        padding-top: 2.313rem;
+        width: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;    
+    }
+    @include respond-to('medium') {
+        padding-top: 2.313rem;
+        width: 100%;    
+        position: absolute;
+        display: flex;
+        justify-content: space-around;     
+    }
+}
