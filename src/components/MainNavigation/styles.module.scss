@@ -1,23 +1,65 @@
-.mainNavigation {
-  display: flex;
+@import '../../app/variables';
+@import '../../app/mixins';
 
-  flex-direction: column;
+.nav {
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  height: 50px;
+  border: 1px solid black;
+  
+}
+
+.container{
   width: 100%;
-  height: 200px;
-  justify-content: center;
+  height: 9.5rem;
+  
+
+  display: flex;
   align-items: center;
+  justify-content: space-around;  
+    
+  @include respond-to('small') {
+    padding: 2rem; 
+  }
+  @include respond-to('medium') {
+    padding: 2rem;
+    
+  }
 
-  background-image: linear-gradient(rgba(0.8, 0, 0, 0.7), rgba(0.9, 0, 0, 0.6)),
-    url('/images/slider.png');
+}
+.buttonLogin {      
+  background-color:transparent;  
+  border: solid 2px;
+  color:rgba(255, 255, 255, 1);
+  padding: 0 0.313rem;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  height: 1.313rem;
+  @include respond-to('small') {
+    height: 1.438rem;
+    font-size: 0.875rem;
+  }
+  @include respond-to('medium') {
+    height: 1.7rem;
+    font-size: 1rem;
+  }
+}
 
-  .navHeader {
-    display: 'flexbox';
-    justify-content: center;
-    align-items: center;
-    padding: 5px 0;
-    width: 50%;
-    height: 100%;
-    background-color: transparent;
-    color: white;
+.buttonRegister {
+background-color:rgba(1, 70, 29, 1);
+padding: 0 0.313rem;
+color:rgba(255, 255, 255, 1);
+text-transform: uppercase;
+font-family: 'Roboto', sans-serif;
+  @include respond-to('small') {
+    height: 1.438rem;
+    font-size: 0.875rem;
+  }
+  @include respond-to('medium') {
+    height: 1.7rem;
+    font-size: 1rem;
   }
 }
