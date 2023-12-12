@@ -1,0 +1,67 @@
+.artirecent {
+  color: #01461D;
+  font-size: 2.25rem; 
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.article-recent{
+  color: #01461D;
+  font-size: 2rem;
+  font-style: normal;
+  line-height: 139.687%;
+  text-transform: uppercase;  
+}
+.article-date{
+  color: #6c757d;
+  font-size: 1rem; 
+  font-style: normal;
+  line-height: 1.36; 
+}
+.article-title{
+  color: #000000;
+  font-size: 2rem; 
+  font-style: normal;
+  line-height: 1.39687; 
+  text-transform: uppercase;
+}
+.article-content{
+  color: #000;
+  font-size: 1.5rem; 
+  font-style: normal;
+  line-height: 1.36; 
+}
+.article-author{
+  color: #6c757d;
+  font-size: 1rem; 
+  font-style: normal;
+  line-height: 1.36; 
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown .dropdown-menu {
+    position: absolute;
+    bottom: 100%;
+    display: none;
+    margin: -9px;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown button {
+    color: #FFFFFF;
+    border: none;
+    margin: 0;
+    padding: 0em 0em;
+    font-size: 1em;
+}
+.dropdown a {
+    display: block;
+}
