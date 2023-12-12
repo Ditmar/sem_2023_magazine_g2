@@ -16,19 +16,6 @@
     background: url(../assets/img/logo.png),#ffffff 50% / cover no-repeat;
     flex-shrink: 0;       
 }
-
-.ButtonIniciar {
-    background-color: #178435; 
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    width: 362px;
-    height: 49;
-    border-radius: 35px;
-    font-size: 40px;
-    font: Monserrat;
-}
-
 .button{
     width: 251px;
     height: 69px;
@@ -54,7 +41,8 @@
 .ButtonGoogle{
     background-color: #178435; 
     display:flex;
-    justify-content:center;
+    justify-content: space-around;
+    align-items: center;
     width: 615px;
     height: 60px;
     top: 364px;
