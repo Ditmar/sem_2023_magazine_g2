@@ -40,10 +40,10 @@
   
   /* Estilos para la imagen */
   .footerImage {
-    display: flex;
+    display: auto;
     justify-content: right;
     align-items: center;
     margin-bottom: 20px;
-    width: 20%; 
+    width: auto; 
   }
   

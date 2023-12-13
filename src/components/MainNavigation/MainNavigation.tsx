@@ -3,7 +3,7 @@ const MainNavigation = () => {
 
     return (
         <nav className={styles.nav}>
-            Menu here
+            Menu here 
         </nav>
     )
 }
