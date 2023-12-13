@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "image": "./__mock__/1.png",
+        "volume": "Vol.1",
+        "date": "Abril 15 | 2023"
+    },
+    {
+        "id": 2,
+        "image": "./__mock__/2.png",
+        "volume": "Vol.2",
+        "date": "Abril 15 | 2023"
+    },
+    {
+        "id": 3,
+        "image": "./__mock__/3.png",
+        "volume": "Vol.3",
+        "date": "Abril 15 | 2023"
+    },
+    {
+        "id": 4,
+        "image": "./__mock__/1.png",
+        "volume": "Vol.4",
+        "date": "Abril 15 | 2023"
+    },
+    {
+        "id": 5,
+        "image": "./__mock__/2.png",
+        "volume": "Vol.5",
+        "date": "Abril 15 | 2023"
+    }
+]

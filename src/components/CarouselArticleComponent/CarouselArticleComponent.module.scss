@@ -1,0 +1,41 @@
+@import '../../app/variables';
+@import '../../app/mixins';
+.Article{
+  margin: 0rem;
+  padding: 0rem;
+}
+.productImage{
+  width: 90%;
+  padding-bottom: 0.4rem;
+}
+.date{
+  text-align: center;
+  font-size: 1.5rem;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.563rem;
+  font-family: "Lato";
+  font-weight: 400;
+  line-height: 1.43;
+  background-color: #fafafa;
+  @include respond-to('small') {
+    font-size: 0.6rem;
+  }
+  @include respond-to('medium') {
+    font-size: 1rem;
+  }
+}
+.subtitle {
+  text-align: center;
+  margin: 0%;
+  padding: 0%;
+  font-size: 30px;
+  color: #01461D;
+  font-weight: bolder;
+  box-sizing: inherit;
+  @include respond-to('small') {
+    font-size: 0.7rem;
+  }
+  @include respond-to('medium') {
+    font-size: 1.1rem;
+  }
+}
