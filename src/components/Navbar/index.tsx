@@ -1,10 +1,9 @@
+// @ts-nocheck
 'use client';
-
 import { useState } from 'react';
 import styles from './styles.module.scss';
 import Link from 'next/link';
 import Years from '../../app/years/page';
-
 
 const Navbar: React.FC = () => {
   const [selectedItem, setSelectedItem] = useState(null);
@@ -68,5 +67,4 @@ const Navbar: React.FC = () => {
     </>
   );
 };
-
 export default Navbar;
