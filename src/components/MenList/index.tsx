@@ -16,6 +16,7 @@ export default function MenuList() {
             <MenuItem href="/" src={ini} alt="icono de inicio" text="INICIO" />
             <MenuItem href="/volumes" src={volumenes} alt="icono de volumenes" text="VOLUMENES" />
           </ul>
+          
         </div>
     )
 }
