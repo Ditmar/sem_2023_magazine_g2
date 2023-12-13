@@ -4,7 +4,7 @@ import Glider from 'react-glider';
 import './glider.min.css';
 import style from './CarouselComponent.module.scss'
 import CarouselArticule from '../CarouselArticleComponent/CarouselArticleComponent';
-import itemData from '../__mock__/data.json';
+import itemData from '../__mock__/dataCarousel.json';
 import Image from 'next/image';
 import arrowleft from 'public/assets/images/arrowleft.svg';
 import arrowright from 'public/assets/images/arrowRight.svg';
