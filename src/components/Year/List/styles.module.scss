@@ -5,7 +5,7 @@ $allowWrapping: nowrap;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50%;
 
   overflow-y: auto;
 
@@ -47,7 +47,6 @@ $allowWrapping: nowrap;
   @media screen and (max-width: 468px) {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-  
   }
 
   &:hover {

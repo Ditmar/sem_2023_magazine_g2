@@ -1,10 +1,11 @@
-import ScientificArticles from "@/components/ScientificArticles";
-import CarouselComponent from "@/components/CarouselComponent/CarouselComponent";
+import ScientificArticles from '@/components/ScientificArticles';
+import CarouselComponent from '@/components/CarouselComponent/CarouselComponent';
+import Container from '@/components/Container';
 export default function Home() {
   return (
-    <main>
-      <ScientificArticles/>
-      <CarouselComponent/>
-    </main>
-  )
+    <Container>
+      <ScientificArticles />
+      <CarouselComponent />
+    </Container>
+  );
 }
