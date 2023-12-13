@@ -1,0 +1,208 @@
+@import '../../app/variables';
+@import '../../app/mixins';
+
+.footer{
+    background-color: white;
+    background-size: cover;
+    display:inline-flex;
+    justify-content:space-around;
+    text-align:justify;
+    width: 100%;
+    height: auto;
+    font-size: 16px;
+    color: #01461D;
+
+    @include respond-to('small') {    
+        display: inline;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    @include respond-to('medium') {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+}
+.imagenFooter{
+    width: 250px;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    
+    @include respond-to('small') {
+        margin: auto;
+    }
+    @include respond-to('medium') {
+        margin-right: 10px;
+    }
+    @include respond-to('large') {
+        height: auto;
+        width: 250px;
+    }
+}
+.line{
+    background-color: #01461D;
+    width: 4px;
+    height: 90px;
+    margin-top: -4px;
+    margin-right: 20px;
+    font-size: 10px;
+    @include respond-to('small') {
+        background-color:#f5f2f2;
+        color:#f5f2f2; 
+        margin: auto, auto;    
+    }
+    @include respond-to('medium') {
+        margin-left: auto;
+    }
+}
+.line2{
+    background-color: #01461D;
+    font-size: 10px;
+    width: 4px;
+    height: 90px;
+    margin-top: -4px;
+    margin-left: 20px;
+    margin-right: 20px;
+    @include respond-to('small') {
+        margin: auto;
+    }
+    @include respond-to('medium') {
+        margin-left: auto;
+    }
+}
+.footertext{
+    display: flex;
+    text-align:left;
+    margin-top: 25px;
+
+    @include respond-to('small') {
+        margin-bottom: 10px;
+        background-color: white;
+        font-weight: 800;
+    }
+}
+.textR{
+    height: auto;
+    width: 250px;
+    @include respond-to('medium') {
+        height: auto;
+        width: 150px;
+    }
+    @include respond-to('small') {
+        height: auto;
+        width: 130px;
+        margin-left: auto; 
+    }
+}
+.text{
+    font-weight: 800;
+    @include respond-to('small') {
+        text-align: center;
+        font-size: 15px;
+    }
+}
+.list{
+    display:flex;
+    text-align:left;
+    margin-top: 12px;
+    line-height: 30px;
+    list-style-type:disc;
+    width: 270px;
+    
+    @include respond-to('small') {
+        text-align:left;
+        display: inline;
+        font-size: 15px;
+    }
+    @include respond-to('medium') {
+        display: inline;
+        font-size: 16px;
+    }
+}
+.articles{
+    padding-right: 10px;
+}
+.text1{
+    height: 70px;
+    width: 180px;
+    @include respond-to('small') {
+       margin-right: auto; 
+    }
+}
+.text2{
+    margin-top: 12px;
+    text-align: left;    
+
+    @include respond-to('small') {
+        font-size: 15px;
+        margin-top: auto;
+    }
+    @include respond-to('medium') {
+        font-size: 16px;
+    }
+}
+.text3{
+    height: auto;
+    width: 380px;
+    left: 500px;
+    display:flex;
+    margin-left: 190px;
+    margin-right: 20px;
+    margin-top: 90px;
+
+    @include respond-to('small') {
+        float:right; clear: both;
+        margin-top: 30px;
+        background-color: white;
+        font-weight: 800;
+     }
+     @include respond-to('medium') {
+        display: inline;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        height: auto;
+        width: 200px;
+        padding-left: 3%;
+    }
+} 
+.text4{
+    display: flex;
+    height: auto;
+    width: 170px;
+
+    @include respond-to('small') {
+        font-size: 15px;
+    }
+    @include respond-to('medium') {
+        font-size: 16px;
+    }
+}
+.imagenFooter2{
+    width: 38px;
+    height: 38px;
+    margin-left: 5px;
+    @include respond-to('medium') {
+        width: 20%;
+        height: 20%;
+    }
+}
+.line3{
+    background-color: #01461D;
+    width: 3.5px;
+    height: 50px;
+    margin-right: 15px;
+    margin-top: -10px;
+    @include respond-to('small') {
+        margin: auto, auto;
+    }
+    @include respond-to('medium') {
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        margin-left: 70px;
+        height: 170px;
+        margin-top: -80px;
+        margin-bottom: -80px;
+    }
+}

@@ -1,5 +1,8 @@
-import Container from '@/components/Container';
-
+import ScientificArticles from "@/components/ScientificArticles";
 export default function Home() {
-  return <Container>main</Container>;
+  return (
+    <main className="flex min-h-screen flex-col items-center justify-between">
+      <ScientificArticles/>
+    </main>
+  )
 }
