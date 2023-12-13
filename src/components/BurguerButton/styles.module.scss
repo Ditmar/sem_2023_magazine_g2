@@ -1,0 +1,87 @@
+@import '../../app/variables';
+@import '../../app/mixins';
+
+.menu {
+    @include respond-to('small') {
+        bottom: 0;
+        z-index: 2;
+        position: fixed;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;           
+    }
+    @include respond-to('medium') {
+        bottom: 0;
+        z-index: 2;
+        position: fixed;
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+.containerMenu  {
+    width: 100%;
+    height: 1.938rem;
+    background: #178435;
+    border-bottom: 0.938rem solid;
+    border-bottom-color: #01461D;
+
+    @include respond-to('small') {   
+        z-index: 1;
+        bottom: 0;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2rem;            
+    }
+    @include respond-to('medium') {
+        z-index: 1;
+        bottom: 0;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+}
+.iconHamburger {
+    
+    @include respond-to('small') {
+        background-color: transparent;  
+    }
+    @include respond-to('medium') {
+        background-color: transparent;
+    }
+}
+.menuIcon {
+    
+    @include respond-to('small') {
+        object-fit: contain;
+    }
+    @include respond-to('medium') {
+        object-fit: contain;
+    }
+}
+
+.buttonx {
+    
+    @include respond-to('small') {
+        grid-column:span;
+        border: none;
+        width: 1.375rem;
+        height: 1.375rem;
+        margin-right: 3%;
+    }
+    @include respond-to('medium') {
+        grid-column:span;
+        border: none;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right: 3%;
+    }    
+}
