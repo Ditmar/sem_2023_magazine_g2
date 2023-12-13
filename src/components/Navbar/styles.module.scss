@@ -1,291 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 .toolbar {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 100%;
-@import '../../app/variables';
-@import '../../app/mixins';
 
-
-.rectangle1 {
-        object-fit: cover;
-    
-    @include respond-to('small') {
-        color: white;
-        width: 100%;
-        height: 3.3125rem;
-        background-color: rgb(23, 132, 53);
-        display: flex;
-        flex-flow: wrap;
-        border-bottom: 0.8125rem solid rgb(1, 70, 29); 
-        align-items: center;
-        justify-content: space-between;    
-    }
-    @include respond-to('medium') {
-        color: white;
-        width: 100%;
-        height: 3.3125rem; 
-        background-color: rgb(23, 132, 53);
-        display: flex;
-        flex-flow: wrap;
-        border-bottom: 0.625rem solid rgb(1, 70, 29);
-        align-items: center;
-        justify-content: space-between;
-    }
-}
-.btnSearch{
-position: absolute;
- top: 20px;
- right: 10px;
-}
-
-.form {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  gap: 15px;
-}
-
-.container button {
-  padding: 10px;
-  background: white;
-  color: #01461D;
-  text-transform: uppercase;
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.container input {
-  width: 100%;
-  outline: none;
-  background: none;
-  border-bottom: solid 3px white;
-  font-size: 1.5em;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  width: 0;
-  max-width: 800px;
-  height: 200px;
-  background: none;
-  overflow: hidden;
-  transition: all 0.3s ease-in-out;
-}
-
-.container.expanded {
-  width: 500px;
-  height: 200px;
-}
-
-.sectionCards {
-
-  width: 100%;
-  background-color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 253px;
-  padding-right: 253px;
-  margin: 0;
-  gap: 10px;
-}
-
-.sectionTitle {
-  width: 100%;
-  font-weight: 800;
-  font-size: 64px;
-  line-height: 78.02px;
-  color: #01461D;
-  text-transform: uppercase;
-  text-align: left;
-}
-
-.card {
-  width: 100%;
-  border: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: 0;
-  border-bottom: solid 4px #01461D;
-}
-
-.cardHeader {
-  width: 100%;
-  padding: 5px;
-}
-
-.cardTitle {
-  width: 100%;
-  text-transform: uppercase;
-  color: #000000;
-  font-size: 40px;
-  font-weight: 800;
-  text-align: left;
-  line-height: 55.87px;
-  word-wrap: break-word;
-}
-
-.cardSubTitle {
-
-  width: 100%;
-  display: flex;
-  text-transform: capitalize;
-  text-align: left;
-  color: #aaaaaa;
-  font-size: 27px;
-  line-height: 32.64px;
-  font-weight: 275;
-}
-
-.cardContainer {
-  text-align: justify;
-  text-size-adjust: auto;
-  color: #000000;
-  font-family: 'Lato', sans-serif;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 300;
-  word-wrap: break-word;
-}
-
-.cardAutor {
-  text-transform: capitalize;
-  text-align: left;
-  color: #aaaaaa;
-  font-size: 24px;
-  line-height: 32.64px;
-  font-weight: 275;
-}
-
-.cardActions {
-  display: flex;
-  justify-content: flex-end;
-  gap: 30px;
-}
-
-.cardActionsBtn {
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-}
-
-.cardActionsBtn:hover {
-  background: rgba(0, 0, 0, 0.04);
-}
-
-
-.cardIcon {
-  width: 28px !important;
-  height: 30px !important;
-  margin: auto;
-}
-
-@media screen and (max-width: 600px) {
-  .nav {
+  ul {
+    list-style: none;
     display: flex;
-    justify-content: flex-end;
-  }
+    padding: 15px;
 
-  .nav ul {
-    display: none;
-  }
+    li {
+      margin-left: 20px;
+      margin-right: 20px;
 
-  .container {
-    max-width: 80%
-  }
+      &.volumen a {
+        color: #f5f5f5;
+      }
 
-  .sectionCards {
-    padding-left: 24px;
-    padding-right: 24px;
-  }
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        color: transparent;
 
-  .sectionTitle {
-    font-size: 30px;
-    line-height: 36.57px;
-  }
-
-  .cardTitle {
-    font-size: 14px;
-    line-height: 19.56px;
-  }
-
-  .cardSubTitle {
-    font-size: 12px;
-    line-height: 16.32px;
-  }
-
-  .cardContainer {
-    font-size: 12px;
-    line-height: 16.32px;
-  }
-
-  .cardAutor {
-    font-size: 10px;
-    line-height: 13.6px;
-  }
-
-  .cardIcon {
-    width: 15px !important;
-    height: 16px !important;
-  }
-
-  .card {
-    border-bottom: solid 1px #01461D;
-  }
-
-.rectangle2{
-    object-fit: cover;
-    
-    
-    @include respond-to('small') {
-        margin-right: 0;
-        background-color: rgb(255, 255, 255);
-        border-radius: 0% 2rem 2rem 0%;
-        width: 7.8125rem; 
-        height: 2.5rem;
-        border-right: solid rgb(255, 255, 255);
-        padding-right: 0.3125rem;
+        &:hover {
+          color: white;
+        }
+      }
     }
-    @include respond-to('medium') {
-        margin-right: 0;
-        background-color: rgb(255, 255, 255);
-        border-radius: 0% 2rem 2rem 0%;
-        width: 7.8125rem; 
-        height: 2.5rem;
-        border-right: solid rgb(255, 255, 255);
-        padding-right: 0.3125rem;
+  }
+
+  .fab {
+    border-radius: 4px;
+    bottom: 25;
+    margin-bottom: 10px;
+    padding: 5px 30px;
+    height: auto;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: aliceblue;
+    color: #01461d;
+
+    &:hover {
+      transform: scale(1.1);
+      background-color: #01461d;
+      color: aliceblue;
     }
-}
-.logo {
-    object-fit: cover;
-    
-    
-    @include respond-to('small') {
-        width: 5.9375rem; 
-        height: 2.0625rem; 
-    }
-    @include respond-to('medium') {
-        width: 6.25rem; 
-        height: 2.5rem;
-    }
-}
-.icon{
-    width: 2.25rem;
-    height: 2.5rem;
-    justify-content: space-evenly;
+  }
 }

@@ -76,4 +76,38 @@ font-family: 'Roboto', sans-serif;
     color: white;
 
   }
+
+}
+.buttonLogin {      
+  background-color:transparent;  
+  border: solid 2px;
+  color:rgba(255, 255, 255, 1);
+  padding: 0 0.313rem;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  height: 1.313rem;
+  @include respond-to('small') {
+    height: 1.438rem;
+    font-size: 0.875rem;
+  }
+  @include respond-to('medium') {
+    height: 1.7rem;
+    font-size: 1rem;
+  }
+}
+
+.buttonRegister {
+background-color:rgba(1, 70, 29, 1);
+padding: 0 0.313rem;
+color:rgba(255, 255, 255, 1);
+text-transform: uppercase;
+font-family: 'Roboto', sans-serif;
+  @include respond-to('small') {
+    height: 1.438rem;
+    font-size: 0.875rem;
+  }
+  @include respond-to('medium') {
+    height: 1.7rem;
+    font-size: 1rem;
+  }
 }
